@@ -1,7 +1,8 @@
 {
-  "name": "root",
-  "private": true,
-  "workspaces": ["packages/*"],
+  "name": "chonky-file-browser",
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "lerna": "^3.22.1"
   },
@@ -11,8 +12,15 @@
     "email": "tim.kuzh@gmail.com",
     "url": "https://foxypanda.me/"
   },
+  "contributors" : [
+    {
+      "name" : "Buginbox",
+      "email" : "buginbox@easyciel.net"
+    }
+   ],
   "resolutions": {
     "**/typescript": "4.2.2",
     "**/immer": "8.0.4"
-  }
+  },
+  "version": "0.9.0"
 }
