@@ -9,9 +9,6 @@
     "dist",
     "src"
   ],
-  "engines": {
-    "node": ">=10"
-  },
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
@@ -20,9 +17,6 @@
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why"
-  },
-  "peerDependencies": {
-    "react": ">=16"
   },
   "husky": {
     "hooks": {
