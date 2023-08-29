@@ -83,10 +83,11 @@ export const defaultFormatters: ChonkyFormatters = {
     ): Nullable<string> => {
         const safeModDate = FileHelper.getModDate(file);
         if (safeModDate) {
-            return intl.formatDate(safeModDate, {
-                dateStyle: 'medium',
-                timeStyle: 'short',
-            });
+            // return intl.formatDate(safeModDate, {
+            //     dateStyle: 'medium',
+            //     timeStyle: 'short',
+            // });
+            return intl.formatDate(safeModDate);
         } else {
             return null;
         }

@@ -4,8 +4,8 @@ import {
 } from '@material-ui/core/styles';
 import merge from 'deepmerge';
 import React, { ReactNode, useMemo } from 'react';
-import { DndProvider } from 'react-dnd';
-import { HTML5Backend } from 'react-dnd-html5-backend';
+// import { DndProvider } from 'react-dnd';
+// import { HTML5Backend } from 'react-dnd-html5-backend';
 import { IntlProvider } from 'react-intl';
 import { ThemeProvider } from 'react-jss';
 import { Provider as ReduxProvider } from 'react-redux';
@@ -97,13 +97,14 @@ export const FileBrowser = React.forwardRef<
                                     ChonkyIconPlaceholder
                                 }
                             >
-                                {disableDragAndDrop || disableDragAndDropProvider ? (
+                                {chonkyComps}
+                                {/* {disableDragAndDrop || disableDragAndDropProvider ? (
                                     chonkyComps
                                 ) : (
                                     <DndProvider backend={HTML5Backend}>
                                         {chonkyComps}
                                     </DndProvider>
-                                )}
+                                )} */}
                             </ChonkyIconContext.Provider>
                         </MuiThemeProvider>
                     </ThemeProvider>
